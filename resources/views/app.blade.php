@@ -36,19 +36,8 @@
 			</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-				
-					@if (Route::has('login'))
-		                <div class="top-right links">
-		                    @if (Auth::check())
-		                        <li><a href="{{ url('/home') }}">Home</a></li>
-		                    @else
-								<li><a href="#/items">Item</a></li>
-		                        <li><a href="{{ url('/login') }}">Login</a></li>
-		                        <li><a href="{{ url('/register') }}">Register</a></li>
-		                    @endif
-		                </div>
-		            @endif
-
+					<li><a href="#/">Home</a></li>
+					<li><a href="#/items">Item</a></li>
 				</ul>
 			</div>
 		</div>
